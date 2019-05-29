@@ -7,3 +7,12 @@ function toggleForm() {
         formulaire.style.display = 'block';
     }
 }
+
+// TOGGLE DARK NIGHT //
+$('#switch').on('click', () => {
+    if ($('#switch').prop('checked')) {
+        $('.Body').addClass('dark');
+    } else {
+        $('.Body').removeClass('dark');
+    }
+})
