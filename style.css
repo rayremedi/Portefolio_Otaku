@@ -1,0 +1,653 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./medias/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Oswald", sans-serif;
+}
+/* MENU BURGER */
+#menu-demo2 {
+  width: 98vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#menu-demo2,
+#menu-demo2 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#menu-demo2 ul li {
+  display: inherit;
+  border-radius: 0;
+}
+
+#menu-demo2 ul li:hover {
+  border-radius: 0;
+}
+
+#menu-demo2 ul li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+#menu-demo2 ul {
+  position: absolute;
+  z-index: 1000;
+  max-height: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  -webkit-transition: 0.8s all 0.3s;
+  transition: 0.8s all 0.3s;
+}
+
+#menu-demo2 li:hover ul {
+  max-height: 15em;
+}
+
+/* background des liens menus */
+#menu-demo2 li:first-child {
+  background-color: #65537a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#65537a), to(#2a2333));
+  background-image: linear-gradient(to bottom, #65537a 0%, #2a2333 100%);
+}
+
+#menu-demo2 li:nth-child(2) {
+  background-color: #729ebf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#729ebf), to(#333a40));
+  background-image: linear-gradient(to bottom, #729ebf 0%, #333a40 100%);
+}
+
+#menu-demo2 li:nth-child(3) {
+  background-color: #f6ad1a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6ad1a), to(#9f391a));
+  background-image: linear-gradient(to bottom, #f6ad1a 0%, #9f391a 100%);
+}
+
+#menu-demo2 li:last-child {
+  background-color: #cfff6a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfff6a), to(#677f35));
+  background-image: linear-gradient(to bottom, #cfff6a 0%, #677f35 100%);
+}
+
+/* background des liens sous menus */
+#menu-demo2 li:first-child li {
+  background: #2a2333;
+}
+
+#menu-demo2 li:nth-child(2) li {
+  background: #333a40;
+}
+
+#menu-demo2 li:nth-child(3) li {
+  background: #9f391a;
+}
+
+#menu-demo2 li:last-child li {
+  background: #677f35;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover,
+#menu-demo2 li:first-child li:hover {
+  background: #65537a;
+}
+
+#menu-demo2 li:nth-child(2):hover,
+#menu-demo2 li:nth-child(2) li:hover {
+  background: #729ebf;
+}
+
+#menu-demo2 li:nth-child(3):hover,
+#menu-demo2 li:nth-child(3) li:hover {
+  background: #f6ad1a;
+}
+
+#menu-demo2 li:last-child:hover,
+#menu-demo2 li:last-child li:hover {
+  background: #cfff6a;
+}
+
+/* les a href */
+#menu-demo2 a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 32px;
+  color: #fff;
+  font-family: arial;
+}
+
+#menu-demo2 ul a {
+  padding: 8px 0;
+}
+
+#menu-demo2 li:hover li a {
+  color: #fff;
+  text-transform: inherit;
+}
+
+#menu-demo2 li:hover a,
+#menu-demo2 li li:hover a {
+  color: #000;
+}
+/* ICONE DU SITE */
+#icone-de-site {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 1%;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+#icone-de-site:hover {
+  -webkit-transform: rotate(360deg) scale(1.1);
+  transform: rotate(360deg) scale(1.1);
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* FIN ICONE DU SITE */
+main {
+  margin-top: 5%;
+}
+/* SECTION ACCUEIL */
+
+.homepage-title {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgb(0, 0, 0, 0.3)), url(./medias/FalloutBg.jpg);
+
+  padding-top: 5%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 98vw;
+  text-align: center;
+  height: 25em;
+  color: #32ee32;
+}
+
+.homepage-title h1 {
+  position: relative;
+  left: 35%;
+  background-color: rgba(10, 10, 10, 0.7);
+  width: 30%;
+  margin-top: 5px;
+  font-size: 6em;
+  letter-spacing: 5px;
+}
+
+.homepage-title h3 {
+  background-color: rgba(10, 10, 10, 0.7);
+  width: 50%;
+  position: relative;
+  left: 38%;
+  font-size: 4em;
+}
+
+/* SECTION GAMES */
+#section-jeux {
+  position: relative;
+  margin-top: 11%;
+  height: 100vh;
+}
+
+#section-jeux .ligne {
+  position: absolute;
+  left: 44.5%;
+  border: 4px solid white;
+  width: 8em;
+}
+
+#section-jeux h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  padding-top: 1%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SECTION CARTES */
+#card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100vh;
+  width: 98%;
+  margin-top: 3%;
+  /* border: 4px solid black; */
+}
+
+.card {
+  margin-top: 3%;
+  height: 86vh;
+  width: 25%;
+}
+
+.card img {
+  width: 300px;
+  height: 400px;
+  margin-left: 2%;
+  -webkit-box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px black;
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.card-text {
+  margin-top: 2%;
+  color: white;
+  text-align: center;
+  height: 33vh;
+  width: 90%;
+  background-color: rgba(10, 10, 10, 0.7);
+}
+
+.card-text h1 {
+  height: 11vh;
+  text-align: center;
+}
+
+.card-text p {
+  height: 12vh;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+/* SECTION CONSOLE */
+#section-console {
+  margin-top: 14%;
+  position: relative;
+  height: 426vh;
+}
+#section-console h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  padding-top: 1%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#section-console .ligne {
+  position: absolute;
+  left: 44.5%;
+  border: 4px solid white;
+  width: 8em;
+}
+
+#section-console img {
+  -webkit-box-shadow: 8px 8px 1px black;
+  box-shadow: 8px 8px 1px black;
+}
+
+/* ARTICLE MEGA SATURN */
+#section-segaSaturn {
+  margin-top: 8%;
+}
+/* IMAGES DES CARTES */
+.console-img img {
+  height: 50vh;
+  width: 47vw;
+}
+/* TEXTE DES CARTES */
+.console-text {
+  margin-top: 1%;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  left: 700px;
+  border: 4px solid black;
+  width: 50%;
+}
+.console-text p {
+  padding-bottom: 5%;
+}
+/* ARTICLE NINTENDO 64 */
+#section-N64 {
+  position: relative;
+  margin-top: 27%;
+
+  height: 105vh;
+}
+
+#section-N64 .console-text2 {
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  left: 700px;
+  border: 4px solid black;
+  width: 50%;
+  bottom: 0;
+}
+
+#section-N64 .console-img img {
+  height: 54vh;
+  width: 47vw;
+}
+
+#section-N64 #menu-demo2 li {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
+
+/* ARTICLE DREAMCAST */
+#section-dreamcast {
+  margin-top: 1%;
+}
+
+/* ARTICLE GAMECUBE */
+#section-gamecube {
+  height: 91vh;
+  margin-top: 25%;
+}
+
+/* SECTION GALLERY JV */
+#section-gallery {
+  margin-top: 10%;
+  margin-left: 6%;
+}
+#section-gallery .ligne {
+  position: absolute;
+  left: 47%;
+  border: 4px solid white;
+  width: 8em;
+}
+
+#section-gallery h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  padding-top: 1%;
+  text-align: center;
+  text-transform: uppercase;
+}
+#gallery {
+  margin-top: 4%;
+  height: 150vh;
+}
+#gallery li {
+  position: relative;
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+.Picture img {
+  height: 90%;
+  width: 88%;
+}
+.Picture2 img {
+  height: 85%;
+  width: 94%;
+}
+.Picture3 img {
+  height: 85%;
+  width: 92%;
+}
+.outerBorder {
+  background-color: #1e1e1e;
+  height: 385px;
+  position: relative;
+  width: 278px;
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
+  -moz-box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
+  box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
+  background: -moz-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #000000),
+    color-stop(83%, #4c4c4c),
+    color-stop(100%, #000000)
+  );
+  background: -webkit-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -o-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -ms-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: linear-gradient(135deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
+
+.innerBorder {
+  background: rgba(172, 16, 16, 0.712) top left repeat;
+  height: 355px;
+  left: 16px;
+  position: absolute;
+  top: 16px;
+  width: 245px;
+  -webkit-box-shadow: inset 5px 5px 12px rgba(50, 50, 50, 0.44);
+  -moz-box-shadow: inset 5px 5px 12px rgba(50, 50, 50, 0.44);
+  box-shadow: inset 5px 5px 12px rgba(50, 50, 50, 0.44);
+  overflow: hidden;
+}
+
+.Cadre {
+  border: #000 solid 4px;
+  position: relative;
+  bottom: 4.7em;
+}
+
+li img {
+  left: 15px;
+  position: relative;
+  top: 16px;
+}
+
+ul li:nth-child(5) .outerBorder {
+  width: 563px;
+  height: 288px;
+}
+
+ul li:nth-child(5) .innerBorder {
+  width: 530px;
+  height: 255px;
+}
+
+ul li:nth-child(8) .outerBorder {
+  width: 385px;
+  height: 278px;
+}
+
+ul li:nth-child(8) .innerBorder {
+  width: 355px;
+  height: 245px;
+}
+/* SECTION CONTACT */
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #1255a2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1872d9;
+}
+
+.container {
+  display: none;
+  /* Ajouter box-sizing */
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin: 0 auto;
+}
+#section-contact h1 {
+  color: blue;
+  font-size: 2em;
+  width: 100%;
+}
+
+#section-contact button {
+  color: white;
+  background: rgba(10, 10, 10, 0.5);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
+  height: 6vh;
+  width: 10vw;
+  position: relative;
+  left: 45%;
+}
+#section-contact .formulaire {
+  margin-top: 5%;
+}
+/* SECTION FOOTER */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300, 400);
+#section-footer {
+  margin-top: 5%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer #button {
+  width: 35px;
+  height: 35px;
+  border: #727172 12px solid;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer #button:hover {
+  width: 35px;
+  height: 35px;
+  border: #3a3a3a 12px solid;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+}
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+.footer #container {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #3a3a3a;
+}
+.footer #cont {
+  position: relative;
+  top: -45px;
+  right: 190px;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+.footer_center {
+  width: 500px;
+  float: left;
+  text-align: center;
+}
+
+.footer h3 {
+  font-family: "Helvetica";
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-left: 40px;
+  visibility: hidden;
+}
+
+.footer i {
+  padding-left: 5px;
+  position: relative;
+  bottom: 1em;
+  font-size: 250%;
+}
+
+.footer i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
