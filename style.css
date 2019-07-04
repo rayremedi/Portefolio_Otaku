@@ -113,25 +113,49 @@ body {
 /* background des liens menus */
 #menu-demo2 li:first-child {
   background-color: #65537a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#65537a), to(#2a2333));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#65537a),
+    to(#2a2333)
+  );
   background-image: linear-gradient(to bottom, #65537a 0%, #2a2333 100%);
 }
 
 #menu-demo2 li:nth-child(2) {
   background-color: #729ebf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#729ebf), to(#333a40));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#729ebf),
+    to(#333a40)
+  );
   background-image: linear-gradient(to bottom, #729ebf 0%, #333a40 100%);
 }
 
 #menu-demo2 li:nth-child(3) {
   background-color: #f6ad1a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6ad1a), to(#9f391a));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f6ad1a),
+    to(#9f391a)
+  );
   background-image: linear-gradient(to bottom, #f6ad1a 0%, #9f391a 100%);
 }
 
 #menu-demo2 li:last-child {
   background-color: #cfff6a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfff6a), to(#677f35));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#cfff6a),
+    to(#677f35)
+  );
   background-image: linear-gradient(to bottom, #cfff6a 0%, #677f35 100%);
 }
 
@@ -231,7 +255,8 @@ main {
 /* SECTION ACCUEIL */
 
 .homepage-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgb(0, 0, 0, 0.3)), url(./medias/FalloutBg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgb(0, 0, 0, 0.3)),
+    url(./medias/FalloutBg.jpg);
 
   padding-top: 5%;
   background-attachment: fixed;
@@ -274,7 +299,7 @@ main {
   position: absolute;
   left: 44.5%;
   border: 4px solid white;
-  width: 8em;
+  width: 9em;
 }
 
 #section-jeux h1 {
@@ -293,16 +318,16 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 100vh;
+  height: 98vh;
   width: 98%;
-  margin-top: 3%;
-  /* border: 4px solid black; */
+  margin: 3% 0 0 2%;
 }
 
 .card {
   margin-top: 3%;
   height: 86vh;
   width: 25%;
+  padding-left: 3%;
 }
 
 .card img {
@@ -336,6 +361,7 @@ main {
   height: 12vh;
   position: relative;
   bottom: 0;
+  width: 98%;
   text-align: center;
 }
 
@@ -343,7 +369,7 @@ main {
 #section-console {
   margin-top: 14%;
   position: relative;
-  height: 426vh;
+  height: 420vh;
 }
 #section-console h1 {
   color: #fff;
@@ -357,7 +383,7 @@ main {
   position: absolute;
   left: 44.5%;
   border: 4px solid white;
-  width: 8em;
+  width: 9em;
 }
 
 #section-console img {
@@ -373,15 +399,16 @@ main {
 .console-img img {
   height: 50vh;
   width: 47vw;
+  margin-left: 2%;
 }
 /* TEXTE DES CARTES */
 .console-text {
-  margin-top: 1%;
+  margin-top: 4%;
   font-weight: bold;
   text-align: center;
   background: #fff;
   position: absolute;
-  left: 700px;
+  left: 45%;
   border: 4px solid black;
   width: 50%;
 }
@@ -401,10 +428,10 @@ main {
   text-align: center;
   background: #fff;
   position: absolute;
-  left: 700px;
+  left: 45%;
   border: 4px solid black;
   width: 50%;
-  bottom: 0;
+  bottom: 3%;
 }
 
 #section-N64 .console-img img {
@@ -438,7 +465,7 @@ main {
   position: absolute;
   left: 47%;
   border: 4px solid white;
-  width: 8em;
+  width: 10em;
 }
 
 #section-gallery h1 {
@@ -450,7 +477,7 @@ main {
 }
 #gallery {
   margin-top: 4%;
-  height: 150vh;
+  height: 100vh;
 }
 #gallery li {
   position: relative;
@@ -479,7 +506,12 @@ main {
   -webkit-box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
   -moz-box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
   box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);
-  background: -moz-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -moz-linear-gradient(
+    -45deg,
+    #000000 0%,
+    #4c4c4c 83%,
+    #000000 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -488,9 +520,19 @@ main {
     color-stop(83%, #4c4c4c),
     color-stop(100%, #000000)
   );
-  background: -webkit-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -webkit-linear-gradient(
+    -45deg,
+    #000000 0%,
+    #4c4c4c 83%,
+    #000000 100%
+  );
   background: -o-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
-  background: -ms-linear-gradient(-45deg, #000000 0%, #4c4c4c 83%, #000000 100%);
+  background: -ms-linear-gradient(
+    -45deg,
+    #000000 0%,
+    #4c4c4c 83%,
+    #000000 100%
+  );
   background: linear-gradient(135deg, #000000 0%, #4c4c4c 83%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
